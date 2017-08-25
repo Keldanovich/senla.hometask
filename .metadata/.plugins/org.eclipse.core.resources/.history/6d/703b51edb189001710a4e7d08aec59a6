@@ -9,7 +9,6 @@ public class task1 {
 	public static void main ( String [] arg) throws NumberFormatException, IOException{
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		int n;
-		System.out.println("¬ведите кол-во значений");
 		n = Integer.parseInt(reader.readLine());
 		int count = 0;
 		  for (int i = 1; i <= n; i++){

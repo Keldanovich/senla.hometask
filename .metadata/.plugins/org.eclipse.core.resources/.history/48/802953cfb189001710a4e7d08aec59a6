@@ -9,18 +9,19 @@ public class task1 {
 	public static void main ( String [] arg) throws NumberFormatException, IOException{
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		int n;
-		System.out.println("¬ведите кол-во значений");
 		n = Integer.parseInt(reader.readLine());
-		int count = 0;
-		  for (int i = 1; i <= n; i++){
-		    for (int j = 1; j <= i; j++){
-		    if ((i%j) == 0)
-		     count++;
-		    }
-		    if (count <= 2)
-		      System.out.println(i);
-		      count = 0;
+		boolean logic=true;
+		
+		for(int i=2;i<n;i++){
+	            
+	             if((n%i)==0){
+	             logic=false;
+	               continue;
+		  
 		   }
+	            
+		}
+	if(logic) System.out.println(n);
 	
 	 
 		/*(System.out.println("¬ведите кол-во значений");

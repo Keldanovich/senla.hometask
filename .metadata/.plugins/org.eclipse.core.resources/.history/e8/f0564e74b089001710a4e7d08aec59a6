@@ -1,0 +1,40 @@
+package hometask1;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class task1 {
+	
+	public static void main ( String [] arg) throws NumberFormatException, IOException{
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		int n;
+		
+		System.out.println("Введите кол-во значений");
+		n = Integer.parseInt(reader.readLine());
+		//int [] mas = new int[n];
+		n=n+1;
+			for (int i = 1; i < n; i++)
+		{   if (i==1)
+        {
+            System.out.println("1");
+         }
+         if(i==2)
+         {
+            System.out.println("2");
+         }
+         else {
+        	 for (int j=2; j<i; j++) {
+        		 if ( i%j==0 ) {}
+        		 else {System.out.println(i);}
+         }}
+			//System.out.print("Введите значение");
+			//mas[i]= Integer.parseInt(reader.readLine());
+			//if (mas[i]==1 || mas[i]==2 || mas[i]==3) {System.out.println("Несостовное");}
+			//for(int d=2; d*d<=mas[i]; d++){
+			//if(mas[i]%d==0) { System.out.println("Составное"); break;}else
+			//{System.out.println("Несоставное");break;}
+	//}
+		}
+			}
+} 
