@@ -1,0 +1,31 @@
+package hometask1;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class task4 {
+	
+	
+public static int nod(int a, int b) {
+			
+			
+			if (b==0) return Math.abs(a);
+			
+			return nod(b,a%b);
+		}
+public static int nok(int a, int b) {
+		
+	return Math.abs((a/nod(a, b) * b));
+}	
+	
+	public static void main ( String [] arg) throws NumberFormatException, IOException
+	{
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+ System.out.println("¬ведите 2 числа ");
+ int a = Integer.parseInt(reader.readLine());
+ int b = Integer.parseInt(reader.readLine());
+ System.out.println(nod(a,b));
+ System.out.println(nok(a,b));
+	}
+}

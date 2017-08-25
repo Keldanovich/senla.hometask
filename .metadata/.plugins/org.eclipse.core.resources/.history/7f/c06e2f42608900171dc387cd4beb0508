@@ -1,0 +1,11 @@
+package hometask1;
+public class home1 {
+	private int n;
+	private int [] mas;
+	
+}
+public class task1 {
+	public static void main (String[] args) {
+		
+	}
+}
